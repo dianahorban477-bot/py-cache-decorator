@@ -10,4 +10,5 @@ def cache(func: Callable) -> Callable:
         else:
             cash.append((args, kwargs))
             print("Getting from cache")
-        return wrapper
+        return cash
+    return wrapper
